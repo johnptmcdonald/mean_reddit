@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+  <title>Article App</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+
+
+  <!-- angular -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular.min.js"></script>
+</head>
+<body ng-app="mean-reddit">
+	 <nav class="navbar navbar-inverse" role="navigation">
+	    <div class="navbar-header">
+	        <a class="navbar-brand" ui-sref="articles">Reddit-kinda App</a>
+	    </div>
+	    <ul class="nav navbar-nav">
+	    	<li><a ui-sref="articles"></a>Articles</li>	
+	    	<li><a ui-sref="new">Create an article</a> </li>
+	    </ul>
+  	</nav>
+	<div ui-view></div>
+
+	</div>
+
+<script src="/app/app.js"></script>
+<script src="/app/config.js"></script>
+<script src="/app/articleController.js"></script>
+<script src="/app/newArticleController.js"></script>
+<script src="/app/articleFactory.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+
+
+</body>
+</html>

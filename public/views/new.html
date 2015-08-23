@@ -1,0 +1,19 @@
+
+<div class="container">
+  <form ng-submit="vm.addArticle(vm.newArticle)">
+    <div class="form-group">
+      <label>Author's name</label>
+      <input type="text" class="form-control" placeholder="Author's name" ng-model="vm.newArticle.name">
+    </div>
+    <div class="form-group">
+      <label>Title</label>
+      <input type="text" class="form-control" placeholder="Title" ng-model="vm.newArticle.title">
+    </div>
+    <div class="form-group">
+      <label>Content</label>
+      <input type="file">
+      <textarea class="form-control" rows="3" ng-model="vm.newArticle.content"></textarea>
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+</div>
