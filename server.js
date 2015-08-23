@@ -6,7 +6,7 @@ var apiRouter = require("./app/config/routes")
 var config = require("./app/config/config");
 var environmentSettings = config.config();
 
-mongoose.connect(environmentSettings.db)
+mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost:27017/mean_reddit');
 
 app.use(bodyParser.urlencoded({extended: true}))
 app.use(bodyParser.json());
